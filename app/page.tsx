@@ -1,5 +1,6 @@
 import Header from '@/src/components/Header/header'
 import Hero from '@/src/components/Hero/hero'
+import Categories from '@/src/components/Categories/categories'
 import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import { Box } from '@chakra-ui/react'
 
@@ -41,7 +42,8 @@ export default function Home() {
         }}
       >
         <Hero />
-        
+        <Categories />
+
       </Box>
     </Box>
   )
