@@ -1,6 +1,7 @@
 import Header from '@/src/components/Header/header'
 import Hero from '@/src/components/Hero/hero'
 import Categories from '@/src/components/Categories/categories'
+import Restaurants from '@/src/components/Restaurants/restaurants'
 import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import { Box } from '@chakra-ui/react'
 
@@ -9,6 +10,18 @@ const mainLayoutSx = {
   background: '#fff',
   paddingBottom: { base: '50px', lg: 0 },
   overflowX: { lg: 'unset' },
+}
+
+const mainContainerSx = {
+  display: 'flex',
+  flexDirection: 'column' as const,
+  gap: 0,
+  width: '100%',
+  maxWidth: '1278px',
+  margin: '0 auto',
+  paddingLeft: { base: '16px', md: '23px', lg: 0 },
+  paddingRight: { base: '16px', md: '23px', lg: 0 },
+  background: '#fff',
 }
 
 export default function Home() {
@@ -44,6 +57,9 @@ export default function Home() {
         <Hero />
         <Categories />
 
+         <Box sx={mainContainerSx}>
+          <Restaurants />
+        </Box>
       </Box>
     </Box>
   )
