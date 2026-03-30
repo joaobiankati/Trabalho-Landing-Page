@@ -2,10 +2,11 @@ import Header from '@/src/components/Header/header'
 import Hero from '@/src/components/Hero/hero'
 import Categories from '@/src/components/Categories/categories'
 import Restaurants from '@/src/components/Restaurants/restaurants'
-import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import PromoBanners from '@/src/components/PromoBanners/promoBanners'
 import Markets from '@/src/components/Markets/markets'
 import Banners from '@/src/components/Banners/banners'
+import FoodLover from '@/src/components/FoodLover/foodLover'
+import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import { Box } from '@chakra-ui/react'
 
 const mainLayoutSx = {
@@ -65,6 +66,10 @@ export default function Home() {
           <PromoBanners />
           <Markets />
           <Banners />
+        </Box>
+
+        <Box bg="#fff" w="100%">
+          <FoodLover />
         </Box>
       </Box>
     </Box>
