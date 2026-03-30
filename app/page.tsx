@@ -8,6 +8,7 @@ import Banners from '@/src/components/Banners/banners'
 import FoodLover from '@/src/components/FoodLover/foodLover'
 import BenefitsSection from '@/src/components/BenefitsSection/benefitsSection'
 import BenefitsFooterStrip from '@/src/components/BenefitsFooterStrip/benefitsFooterStrip'
+import Footer from '@/src/components/Footer/footer'
 import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import { Box } from '@chakra-ui/react'
 
@@ -77,6 +78,7 @@ export default function Home() {
 
         <BenefitsFooterStrip />
       </Box>
+      <Footer />
     </Box>
   )
 }
