@@ -6,6 +6,8 @@ import PromoBanners from '@/src/components/PromoBanners/promoBanners'
 import Markets from '@/src/components/Markets/markets'
 import Banners from '@/src/components/Banners/banners'
 import FoodLover from '@/src/components/FoodLover/foodLover'
+import BenefitsSection from '@/src/components/BenefitsSection/benefitsSection'
+import BenefitsFooterStrip from '@/src/components/BenefitsFooterStrip/benefitsFooterStrip'
 import { IFOOD_FONT_MAIN } from '@/src/theme/ifoodFonts'
 import { Box } from '@chakra-ui/react'
 
@@ -70,7 +72,10 @@ export default function Home() {
 
         <Box bg="#fff" w="100%">
           <FoodLover />
+          <BenefitsSection />
         </Box>
+
+        <BenefitsFooterStrip />
       </Box>
     </Box>
   )
