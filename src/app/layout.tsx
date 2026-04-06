@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { ifoodRcTextos, ifoodRcTitulos } from './fonts/ifood'
 import { Providers } from './providers'
-import './globals.css'
+import '../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Delivery de Comida e Mercado - iFood',
